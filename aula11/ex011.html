@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Qual é a sua Nacionalidade?</h1>
+    Qual País você nasceu: <input type="text" name="txtn1" id="txtn1">
+    <input type="button" value="Pesquisar" onclick="pesquisa()">
+    <div id="res">
+
+    </div>
+    <script>
+        function pesquisa() {
+           var txtn = window.document.querySelector('input#txtn1')
+           var res = window.document.querySelector('div#res')
+           var pais = (txtn1.value)
+           res.innerHTML = `<p>Você nasceu no País ${pais}</p>`
+           if (pais == 'brasil') {
+               res.innerHTML += `<p>Você é <strong>Brasileiro</strong></p>` 
+           } else {
+               res.innerHTML += `<p>Você é <strong>Estrangeiro</strong></p>`
+           }
+        }
+
+    </script>
+</body>
+</html>
