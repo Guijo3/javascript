@@ -13,10 +13,28 @@
     </header>
     <section>
         <div>
-            Início: <input type="number" name="txtn1" id="txtn1">
+            <p>
+                <label for="in1">Início:</label>
+                <input type="number" name="n1" id="in1">
+            </p> 
         </div>
         <div>
-            Fim: <input type="number" name="txtn2" id="txtn2">
+            <p>
+                <label for="in2">Fim:</label>
+                <input type="number" name="n2" id="in2">
+            </p> 
+        </div>
+        <div>
+            <p>
+                <label for="pn1">Passo:</label>
+                <input type="number" name="p1" id="pn1">
+            </p> 
+        </div>
+        <div> 
+            <p><input type="button" value="Contar" onclick="calcular()"></p>
+        </div>
+        <div id="res">
+            <p>Preparando a Contagem...</p>
         </div>
     </section>
     <footer>
