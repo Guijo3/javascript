@@ -4,7 +4,7 @@ var diaSem = agora.getDay()  // .getDay comando usado para mostrar o dia da sema
 //diaSem = 5 // Colocar Valor da semana Forçadamente
 
 /*
-    0 = Domingos
+    0 = Domingo
     1 = Segunda
     2 = Terça
     3 = Quarta
