@@ -4,7 +4,7 @@ function carregar() {
     var img = window.document.getElementById('imagem')
     var dtn = window.document.getElementById('dtn')
     var data = new Date()
-    var hora = 20//data.getHours()
+    var hora = data.getHours()
     msg.innerHTML = `Agora são ${hora} horas.`
     if (hora>= 5 && hora < 12) {
         // BOM DIA !
